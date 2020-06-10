@@ -1,0 +1,1 @@
+<img class="profile-picture" src="{{ $user->avatar }}" alt="{{$user->name}}'s avatar">

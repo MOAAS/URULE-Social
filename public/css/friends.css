@@ -1,0 +1,25 @@
+#add-group-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 0.75em;
+}
+
+#add-group-form {
+    position: relative;
+}
+
+.add-to-group-btn, .add-to-group-btn h3 {
+    color: black;
+    background-color: var(--white);
+}
+
+.add-to-group-btn:hover, .add-to-group-btn:hover h3 {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.unfriend-btn {
+    width: 6.5em;
+}

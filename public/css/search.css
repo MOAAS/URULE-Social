@@ -1,0 +1,36 @@
+#search-form {
+    width: 80%;
+    margin: 1em auto;
+    position: relative;
+}
+
+#search-settings {
+    margin: 1em 0;
+}
+
+#search-btn {
+    position: absolute;
+    right: 0;
+    bottom: -1.25em;    
+    transition: all 0.25s linear;
+}
+
+#search-settings.hide-settings ~ #search-btn, #search-settings.hide-settings ~ .settings-toggler  {
+    bottom: -2em;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #search-settings .input-group {
+        padding: 0 !important;
+    }
+
+    #search-settings .input-group:not(:last-child) { 
+        margin-bottom: 0.5em;
+    }    
+
+    #search-settings .input-group-text {
+        width: 4em;
+    }
+}

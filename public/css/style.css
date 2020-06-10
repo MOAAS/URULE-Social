@@ -1,0 +1,393 @@
+/* --------*/
+/* General */
+/* ------- */
+
+a, a:hover {
+    text-decoration: none !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+/* --------*/
+/* Helpers */
+/* ------- */
+
+.copiable-text-area {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: var(--primary) !important;
+}
+
+.copy-button:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.centered-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.text-prewrap {
+    white-space: pre-wrap;
+}
+
+.text-smart-break {
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.clickable, [data-link-url] {
+    cursor: pointer;
+}
+
+.selected, .selected i {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.unselected, .unselected i {
+    background-color: initial;
+    color: #495057 !important;
+}
+
+.image-input:hover {
+    cursor: pointer;
+}
+
+.transformable {
+    transition: all 0.3s ease;
+}
+
+.transformable-slow {
+    transition: all 1s ease;
+}
+
+/* --------- */
+/*   Brand   */
+/* --------- */
+
+.website-brand-primary, .website-brand-primary use  {
+    fill: var(--primary);
+    color: var(--primary);
+}
+
+.website-brand-secondary, .website-brand-secondary use {
+    fill: var(--white);
+    color: var(--white);
+}
+
+#website-brand-sm, #website-brand-lg {
+    display: flex;
+    align-items: center;
+}
+
+#website-brand-lg {
+    justify-content: center;
+    font-size: 3em;
+}
+
+#website-brand-sm {
+    font-size: 1em;
+}
+
+#website-brand-sm .website-logo {
+    width: 2em;
+    height: 2em;    
+}
+
+#website-brand-sm .website-name {
+    font-size: 1.25em;
+}
+
+
+.sidebar-wrapper .sidebar-heading { 
+    padding: 1rem;
+    font-size: 1.2em;
+}
+
+/* ---------- */
+/*   Avatar   */
+/* ---------- */
+
+.profile-avatar {
+    font-size: 1em;
+    color: black;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.profile-avatar:hover {
+    color: var(--primary);
+}
+
+.profile-picture-small {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.profile-picture-xsmall {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+
+/* --------------------- */
+/* Nav bar and hamburger */
+/* --------------------- */
+
+#bottom-bar {
+    display: none;
+}
+
+#top-bar {
+   padding: 1rem;
+   margin: 0;
+   border-bottom: 1px solid #dee2e6;
+   background-color: var(--light);
+   display: flex;
+   align-items: center;
+}
+
+#page-title {
+   display: inline;
+   font-size: 1.25em;
+   margin: 0;
+}
+
+#hamburger-btn {
+   display: none;
+   margin-right: 1em;
+}
+
+#hamburger-btn-close {
+   margin-left: auto;
+   margin-right: 1em;
+}
+
+#collapsable-sidebar {
+   z-index: 1040;
+   position: fixed;
+   left: 0; top: 0;
+   width: 100%;
+   height: 100%;
+
+   pointer-events: none;
+   transition: all 0.5s ease;
+}
+
+#collapsable-sidebar.open {
+   pointer-events: auto;
+   background-color: rgba(0,0,0,0.4);
+}
+
+#collapsable-sidebar.open #collapsable-sidebar-menu {
+   transform: translateX(0);
+}
+
+#collapsable-sidebar-menu {
+   width: 75vw;
+   height: 100vh;
+   background-color: var(--light);
+
+   transform: translateX(calc(-75vw - 10px));
+   box-shadow: 5px 0 2px 0 rgba(0,0,0,0.5);
+
+   transition: all 0.5s cubic-bezier(0.07, 0.45, 0.5, 1.0);
+}
+
+.num-notifications {
+    position: absolute;
+    left: 2.3em;
+    bottom: 2em;
+}
+
+.erase-notification:hover {
+    background-color: var(--light);
+}
+
+.notification-body:hover {
+    background-color: var(--light);
+}
+
+#dropdown-notifications {
+    padding: 0;
+    margin: 0;
+    width: 30em;
+    height: 20em;
+    overflow: auto;
+}
+
+#collapsable-notifications {
+    height: auto;
+    width: 100%;
+}
+
+button.notifications-btn:focus {
+    outline:0 !important;
+}
+
+button.notifications-btn {
+    position: relative !important;
+}
+
+/* ---------- */
+/*  Settings  */
+/* ---------- */
+
+.toggleable-settings {
+    overflow: hidden;
+    max-height: 12.5em;
+    transition: all 0.25s linear;
+}
+
+.toggleable-settings.hide-settings {
+    max-height: 0 !important;
+}
+
+.settings-toggler {
+    background-color: var(--white) !important;
+
+    position: absolute;
+    z-index: 1000;
+    bottom: -1em;
+
+    overflow: hidden;
+    max-width: 8em;
+    white-space: nowrap;
+    transition: all 0.25s linear !important;
+}
+
+.settings-toggler:not(.hide-settings) {
+    max-width: 2.25em;
+}
+
+.settings-label {
+    color: var(--gray-dark);
+    margin: 0 0.5em 0 0.5em;
+}
+
+/* ------------ */
+/* Post/Comment */
+/* ------------ */
+
+.post-stats > * {
+    padding: 1em;
+    color: var(--primary);
+}
+
+.post-username {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.react-btn.clickable {
+    opacity: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.react-btn-highlight.clickable {
+    opacity: 100%;
+}
+
+.react-btn:hover {
+    opacity: 100%;
+}
+
+.post [data-link-url] {
+    transition: all 0.3s ease;
+}
+
+.post [data-link-url]:hover {
+    background-color: var(--light);
+}
+
+
+@keyframes growing-animation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes shrinking-animation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+/***** Responsivity *****/
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #sidebar{
+        max-width: 4em;
+    }
+
+    .centered-content {
+        max-width: 100%;
+    }
+
+    #sidebar span, #sidebar .website-name {
+        display: none !important;
+    }
+
+    .page-section {
+        max-width: calc(100% - 4em) !important;
+        flex-grow: 1 !important;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .settings-label {
+        display: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #sidebar {
+        display: none !important;
+    }
+
+    #bottom-bar {
+        display: flex;
+    }
+
+    #hamburger-btn {
+        display: inline;
+    }
+
+    .page-section {
+        max-width: 100% !important;
+        margin-bottom: 50px !important;
+    }
+}

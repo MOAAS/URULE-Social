@@ -1,0 +1,92 @@
+#back-btn {
+    display: none;
+    margin-right: 1em;
+}
+
+
+#message-history h2 {
+    font-size: 1.25em;
+}
+
+.conversation-username {
+    font-size: 1em;
+}
+
+.message-received {
+    float: left;
+    background-color: var(--secondary);
+    color: var(--dark);
+    border-radius: 20px 20px 20px 0;
+}
+
+.message-sent {
+    float: right;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 20px 20px 0 20px;
+}
+
+.message-sent, .message-received {
+    position: relative;
+    clear: both;
+    max-width: 80%;
+    list-style-type: none;
+}
+
+.message-sent p, .message-received p{
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#send-msg-form textarea {
+    resize: none;
+}
+
+.delete-msg {
+    opacity: 0%;
+    transition: all 0.3s linear;
+}
+
+.message-sent:hover .delete-msg {
+    opacity: 100%;
+}
+
+.delete-msg {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -20px;
+    color: black;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #preview-list {
+        margin-bottom: 50px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    #message-history:not(.conversation-open) {
+        display: none !important;
+    }
+
+    #conversations.conversation-open {
+        display: none !important;
+    }
+
+    #back-btn {
+        display: inline;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}

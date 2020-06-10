@@ -1,0 +1,115 @@
+.banner-photo-container {
+    height: 22.5vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--light);
+    position: relative;
+}
+
+.banner-photo {
+    width: 1000px;
+    max-width: 100%;
+}
+
+#profile-banner-buttons {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-banner-buttons > button {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-bottom: 0.5em;
+}
+
+#profile-banner-buttons > button:not(:disabled) {
+    background-color: var(--primary);
+    color: white;    
+}
+
+.profile-picture {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 4em);
+    top: calc(50% - 4em);
+}
+
+#profile-info {
+    display: grid;
+    grid-template-areas: 
+        "location name friends"
+        "location birthday friends";
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1em;
+}
+
+#profile-name {
+    grid-area: name;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+#profile-birthday {
+    grid-area: birthday;
+    text-align: center;
+}
+
+#profile-location {
+    grid-area: location;
+    font-size: 1.25em;
+}
+
+#profile-friends {
+    grid-area: friends;
+    font-size: 1.25em;
+    text-align: right;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #profile-picture {
+        width: 6em;
+        height: 6em;
+        left: 1em;
+        top: calc(50% - 3em);
+    }
+
+    #profile-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "name name"
+            "location friends"
+            "birthday birthday";
+    }
+
+    #profile-name {
+        font-size: 1.5em;
+        text-align: left;
+    }    
+
+    #profile-birthday {
+        text-align: left;
+    }    
+
+    #profile-location {
+        font-size: 1em;
+    }
+    
+    #profile-friends {
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .banner-photo {
+        width: 100%;
+    }
+}

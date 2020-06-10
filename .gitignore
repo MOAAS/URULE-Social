@@ -1,0 +1,14 @@
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+/public/storage/users
+run_server.bat
+
+.DS_Store
+TestRule.Json

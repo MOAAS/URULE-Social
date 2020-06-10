@@ -1,0 +1,99 @@
+#post-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;    
+}
+
+#post-form {
+    position: relative;
+}
+
+#post-input {
+    resize: none;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#post-input + .invalid-feedback {
+    width: auto;
+    pointer-events: none;
+    position: absolute;
+    padding: 8px;
+    right: 22px; top: 0;
+    margin-top: 0;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/** Post settings **/
+
+#post-settings {
+    padding: 1em;
+    max-height: 20em;
+}
+
+#post-settings.hide-settings {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#post-form .settings-toggler {
+    left: 1em;
+}
+
+#post-rules + .invalid-feedback {
+    position: absolute;
+}
+
+/** Post image upload **/
+
+#post-image-area {
+    background-color: var(--light);
+    color: var(--primary);
+    border: 2px dashed var(--primary);
+
+    position: relative;
+    text-align: center;
+
+    width: 10em;
+    height: 6em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-clip: padding-box;
+    transition: all 0.3s ease;
+}
+
+#post-image-area:hover:not(.has-image) {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+#post-image-area span {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+#post-image-area.has-image span {
+    display: none;
+}
+
+#post-image-area i {
+    position: absolute;
+    right: 5px; top: 5px;
+}
+
+#post-image-area i:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+#post-image-area:not(.has-image) i {
+     display: none;
+}
+

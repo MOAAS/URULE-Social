@@ -1,0 +1,40 @@
+#comment-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;    
+}
+
+#comment-form {
+    position: relative;
+}
+
+#comment-input {
+    resize: none;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#comment-input + .invalid-feedback {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#rule-description-settings:not(.hide-settings) {
+    max-height: 15em;
+}
+
+#rule-description-settings.hide-settings {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#rule-description {
+    resize: none;
+}
+
+.post .settings-toggler {
+    right: 1em;
+}

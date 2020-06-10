@@ -1,0 +1,10 @@
+#add-group-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    font-size: 0.75em;
+}
+
+#add-group-form {
+    position: relative;
+}

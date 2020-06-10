@@ -1,0 +1,28 @@
+#sign-in, #sign-up {
+    max-width: 400px;
+    margin: auto
+}
+
+#website-logo use {
+    fill: var(--white);
+}
+
+#website-logo {
+    color: white;
+}
+
+.btn-auth-secondary {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+}
+
+.btn-auth-secondary:hover {
+    background-color: var(--light) !important;
+}
+
+
+

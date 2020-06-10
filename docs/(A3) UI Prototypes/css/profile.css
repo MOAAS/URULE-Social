@@ -1,0 +1,77 @@
+#CoverPhotoContainer {
+    height: 20vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--light);
+}
+
+#CoverPhoto {
+    max-width: 1000px;
+}
+
+#ProfilePicture {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 4em);
+    top: calc(20vh - 4em);
+}
+
+.profile-info {
+    font-size: 1.25em;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#profile-stats {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#NumberOfFriends {
+    grid-column: 3;
+    max-width: 100%;
+    width: max-content;
+    margin-left: auto;
+}
+
+#person-name {
+    overflow: hidden;
+    font-size: 2em;
+}
+
+.icon-white {
+    color: white !important;
+}
+
+.round-button {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+}
+
+.round-button:focus {
+    outline: none;
+}
+
+.top-right-button {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    #CoverPhoto {
+        max-width: 100%;
+    }
+
+    .top-right-button {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+}

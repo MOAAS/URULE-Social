@@ -1,0 +1,40 @@
+#post-input {
+    resize: none;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#post-settings {
+    margin: 1em 1em 1.5em 1em;
+    overflow: hidden;
+    max-height: 12.5em;
+
+    transition: all 0.25s linear;
+}
+
+#post-settings.hide-settings {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 0;
+}
+
+#post-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;    
+}
+
+#post-form {
+    position: relative;
+}
+
+#post-settings-toggler {
+    background-color: var(--white);
+    height: 2.5em;
+    width: 2.5em;
+
+    position: absolute;
+    z-index: 1000;
+    bottom: -1em;
+    left: 1em;
+}

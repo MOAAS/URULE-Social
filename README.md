@@ -8,7 +8,7 @@ This artefact is the result of the implementation of the information system desi
 
 ## 1. Installation
 
-Source Code: https://git.fe.up.pt/lbaw/lbaw1920/lbaw2046
+Source Code: https://github.com/MOAAS/LBAW
 
 In order to run, all that is necessary is the command:
 ```shell

@@ -12,19 +12,19 @@
 ### Artefacts
 
 * User Requirements specification
-  * [A1: Project presentation](a1)
-  * [A2: Actors and User stories](a2)
-  * [A3: User Interfaces Prototype](a3)
+  * [A1: Project presentation](a1.md)
+  * [A2: Actors and User stories](a2.md)
+  * [A3: User Interfaces Prototype](a3.md)
 * Database specification
-  * [A4: Conceptual Data Model](a4)
-  * [A5: Relational schema, validation and schema refinement](a5)
-  * [A6: Integrity constraints. Indexes, triggers, user functions, transactions and database populated with data](a6)
+  * [A4: Conceptual Data Model](a4.md)
+  * [A5: Relational schema, validation and schema refinement](a5.md)
+  * [A6: Integrity constraints. Indexes, triggers, user functions, transactions and database populated with data](a6.md)
 * Architecture specification and Prototype
-  * [A7: High-level architecture. Privileges. Web resources specification](a7)
-  * [A8: Vertical Prototype](a8)
+  * [A7: High-level architecture. Privileges. Web resources specification](a7.md)
+  * [A8: Vertical Prototype](a8.md)
 * Product and Presentation
-  * [A9: Product](a9)
-  * [A10: Presentation and discussion](a10)
+  * [A9: Product](a9.md)
+  * [A10: Presentation and discussion](a10.md)
 
 #### Checklist
 

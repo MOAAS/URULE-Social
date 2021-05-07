@@ -11,7 +11,7 @@
         "beyondcode/laravel-websockets": "^1.4",
         "fideloper/proxy": "~4.0",
         "intervention/image": "^2.5",
-        "laravel/framework": "5.8.*",
+        "laravel/framework": "6.18.*",
         "laravel/socialite": "4.3",
         "pusher/pusher-php-server": "^4.1"
     },
